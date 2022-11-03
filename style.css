@@ -1,0 +1,151 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container
+{
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  position: relative; */
+  flex-wrap:wrap;
+  width: 100%;
+  height: 1000px;
+  display:flex;
+/* padding: 50px; */
+
+  position: relative;
+  flex-wrap:wrap;
+
+}
+
+.container .box
+{
+  position: relative;
+  width: 50%;
+  height: 50%;
+  filter: grayscale(75%) opacity(95%);
+  border: 4px solid rgb(255, 255, 255);
+  z-index: 2
+}
+
+.card
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 10px 30px rgba(0,0,0,.2);
+  width: 300px;
+  height: 300px;
+  z-index: 10;
+  box-shadow: 0 20px 30px  rgba(0, 0, 0, 0.604);
+  /* background-color:rgb(249, 250, 252); */
+  overflow: hidden;
+  border: 8px solid white;
+}
+
+#img-circle {
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  border: 8px solid white;
+}
+
+.clip
+{
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+object-position: top;
+
+}
+
+#Piano {
+  object-position: center;
+}
+
+#Whale {
+  object-position: center;
+}
+
+#Ice {
+  object-position: bottom;
+}
+
+
+
+.container .box:hover
+{
+  filter: grayscale(0);
+  /* filter:brightness(50); */
+}
+
+.container .box video
+{
+position: absolute;
+top: 0;
+}
+
+.button {
+z-index: 12;
+position: absolute;
+left: 50%;
+top: 50%;
+filter: opacity(20%);
+background-color: aliceblue;
+color: rgb(202, 202, 202);
+padding: 12px 20px;
+border-radius: 25px;
+border:1px solid rgb(202, 202, 202);
+}
+
+
+.button:hover {
+  color: grey;
+  border:1px solid grey;
+  filter: opacity(65%)
+}
+
+.icon{
+  color: grey;
+}
+
+h1{
+  font-family: 'Albert Sans', sans-serif;
+  color: grey;
+  text-align: center;
+  padding: 20px;
+}
+
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}

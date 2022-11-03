@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <meta name="viewport"
+    content = "width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+  </head>
+  <body>
+    <div class="title">
+      <h1>Michelle Modest</h1>
+    </div>
+    <div class="container">
+      <div class="card">
+        <img src = "images/headshot.jpeg" width = 50% height = 40% alt = "Michelle profile picture" id = img-circle>
+         <!-- <p> “Words," he said, "is oh such a twitch-tickling problem to me all my life.”  </p> -->
+      </div>
+
+      <div class="box">
+        <video src="images/Cameron.mp4" type="video/mp4" loop muted class="clip" id="Cam">  </video>
+        <div class="button">
+          <a href = "https://www.akhalteke-sale.com/forSale/en" target =_blank> <i class="fa-regular fa-horse-head icon"></i> </a>
+        </div>
+      </div>
+      <div class="box">
+        <video src="images/Antarctica.mp4" type="video/mp4" loop muted class="clip" id="Ice">  </video>
+        <div class="button">
+          <a href = "https://www.linkedin.com/in/michelle-modest/" target =_blank> <i class="fab fa-linkedin-in icon"> </i> </a>
+        </div>
+      </div>
+      <div class="box">
+        <video src="images/mewhaleswim.mp4" type="video/mp4" loop muted class="clip" id="Whale">  </video>
+        <div class="button">
+          <a href = "https://www.instagram.com/michelleabellam/" target = blank><i class="fa-brands fa-instagram icon"></i></a>
+        </div>
+      </div>
+      <div class="box">
+        <video src="images/piano.mp4" type="video/mp4" loop muted class="clip" id="Piano">  </video>
+        <div class="button">
+          <a href = "https://tabs.ultimate-guitar.com/tab/taylor-swift/clean-chords-1674149" target = blank><i class="fa-solid fa-music icon"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+
+let movie = document.querySelector("#Cam")
+
+/* Adding the event listeners on the video to play/pause the video. */
+movie.addEventListener("mouseover", function (e) {
+   movie.play();
+})
+
+/* Applying the mouse out event to pause the video */
+movie.addEventListener("mouseout", function (e) {
+   movie.pause();
+})
+
+let movie2 = document.querySelector("#Ice")
+
+/* Adding the event listeners on the video to play/pause the video. */
+movie2.addEventListener("mouseover", function (e) {
+   movie2.play();
+})
+
+/* Applying the mouse out event to pause the video */
+movie2.addEventListener("mouseout", function (e) {
+   movie2.pause();
+})
+
+let movie3 = document.querySelector("#Whale")
+
+/* Adding the event listeners on the video to play/pause the video. */
+movie3.addEventListener("mouseover", function (e) {
+   movie3.play();
+})
+
+/* Applying the mouse out event to pause the video */
+movie3.addEventListener("mouseout", function (e) {
+   movie3.pause();
+})
+
+let movie4 = document.querySelector("#Piano")
+
+/* Adding the event listeners on the video to play/pause the video. */
+movie4.addEventListener("mouseover", function (e) {
+   movie4.play();
+})
+
+/* Applying the mouse out event to pause the video */
+movie4.addEventListener("mouseout", function (e) {
+   movie4.pause();
+})
+    </script>
+  </body>
+</html>
